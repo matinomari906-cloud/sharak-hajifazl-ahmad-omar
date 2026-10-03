@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function () {
       const phone = document.getElementById('phone').value.trim();
       const property = document.getElementById('property').value;
       const message = document.getElementById('message').value.trim();
-
       const normalizedPhone = phone.replace(/\s+/g, '').replace(/[^0-9+]/g, '');
 
       if (!name || !normalizedPhone || normalizedPhone.length < 10) {
