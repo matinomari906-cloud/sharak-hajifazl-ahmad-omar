@@ -1,51 +1,45 @@
-# شهرک رهایشی حاجی فضل احمد عمر
+document.addEventListener('DOMContentLoaded', function () {
+  const menuToggle = document.getElementById('menuToggle');
+  const mainNav = document.getElementById('mainNav');
+  const yearNode = document.getElementById('year');
+  const leadForm = document.getElementById('leadForm');
 
-این پروژه یک وب‌سایت استاتیک و آماده برای هاستینگ برای شهرک رهایشی حاجی فضل احمد عمر در مزارشریف، ولایت بلخ است.
+  if (yearNode) {
+    yearNode.textContent = new Date().getFullYear();
+  }
 
-## ویژگی‌ها
+  if (menuToggle && mainNav) {
+    menuToggle.addEventListener('click', function () {
+      const isOpen = mainNav.classList.toggle('show');
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+    });
 
-- طراحی ریسپانسیو و مدرن
-- صفحه اصلی حرفه‌ای برای معرفی پروژه
-- بخش امکانات، پیشرفت پروژه، گالری و تماس
-- فرم درخواست اطلاعات که پیام را به واتساپ ارسال می‌کند
-- صفحه 404 سفارشی
-- صفحه پنل مدیریت ساده
-- فایل‌های SEO و PWA آماده
+    mainNav.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        mainNav.classList.remove('show');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
 
-## ساختار فایل‌ها
+  if (leadForm) {
+    leadForm.addEventListener('submit', function (event) {
+      event.preventDefault();
 
-- `index.html` — صفحه اصلی
-- `admin.html` — پنل مدیریت ساده
-- `404.html` — صفحه خطای 404
-- `styles.css` — استایل‌ها
-- `script.js` — تعاملات
-- `robots.txt` — ربات‌ها
-- `sitemap.xml` — نقشه سایت
-- `site.webmanifest` — فایل PWA
-- `.htaccess` — تنظیمات Apache
-- `images/` — فایل‌های SVG و گرافیک‌های پروژه
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const property = document.getElementById('property').value;
+      const message = document.getElementById('message').value.trim();
+      const normalizedPhone = phone.replace(/\s+/g, '').replace(/[^0-9+]/g, '');
 
-## اجرا روی هاست
+      if (!name || !normalizedPhone || normalizedPhone.length < 10) {
+        alert('لطفاً نام و شماره تماس معتبر را وارد کنید.');
+        return;
+      }
 
-1. فایل‌های این مخزن را در ریشه هاست یا public_html آپلود کنید.
-2. اگر هاست Apache است، `.htaccess` به‌صورت خودکار فعال می‌شود.
-3. دامنه واقعی را در `robots.txt` و `sitemap.xml` جایگزین کنید.
-4. سایت در آدرس اصلی دامنه شما قابل دسترسی خواهد بود.
-
-## فایل 404
-
-برای Apache کافی است `.htaccess` شامل این خط باشد:
-
-```apache
-ErrorDocument 404 /404.html
-```
-
-## اطلاعات تماس
-
-- 0778800100
-- 0797104648
-- مزارشریف، ولایت بلخ
-
-## نکته
-
-در نسخه‌های واقعی، آدرس `https://example.com` باید با دامنه واقعی شما جایگزین شود.
+      const text = `سلام، من از وب‌سایت شهرک رهایشی حاجی فضل احمد عمر درخواست اطلاعات دارم.\n\nنام: ${name}\nشماره تماس: ${normalizedPhone}\nنوع ملک: ${property}\nپیام: ${message || '—'}`;
+      const whatsappUrl = `https://wa.me/93797104648?text=${encodeURIComponent(text)}`;
+      window.open(whatsappUrl, '_blank', 'noopener');
+    });
+  }
+});
