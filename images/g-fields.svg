@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-label="ساحات و فضای سبز شهرک">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0%" stop-color="#dfeef0"/>
+      <stop offset="100%" stop-color="#cfe4d6"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="620" fill="url(#bg)"/>
+  <rect y="350" width="900" height="270" fill="#8dbb7d"/>
+  <path d="M0 420 C180 390, 280 360, 420 420 S720 500, 900 430 L900 620 L0 620 Z" fill="#7aa869"/>
+  <rect x="80" y="240" width="200" height="110" rx="16" fill="#f6f6f3" opacity="0.9"/>
+  <rect x="340" y="210" width="230" height="140" rx="16" fill="#ffffff" opacity="0.9"/>
+  <rect x="620" y="235" width="190" height="115" rx="16" fill="#f5f7f0" opacity="0.9"/>
+  <rect x="165" y="460" width="120" height="18" rx="9" fill="#0b6268"/>
+  <rect x="390" y="470" width="150" height="18" rx="9" fill="#0b6268"/>
+  <rect x="655" y="475" width="110" height="18" rx="9" fill="#0b6268"/>
+  <path d="M150 420 L260 300 L370 420 Z" fill="#d7ad42"/>
+  <path d="M420 420 L540 250 L660 420 Z" fill="#f3d77a"/>
+  <path d="M650 420 L760 300 L870 420 Z" fill="#d7ad42"/>
+</svg>

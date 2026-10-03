@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="تصویر اصلی شهرک">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#8fd0d9"/>
+      <stop offset="100%" stop-color="#dfeef0"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" x2="1">
+      <stop offset="0%" stop-color="#b7d7a8"/>
+      <stop offset="100%" stop-color="#77a86d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <circle cx="150" cy="120" r="60" fill="#fff6cf"/>
+  <rect y="430" width="1200" height="370" fill="url(#ground)"/>
+  <path d="M0 520 Q220 460 420 520 T1200 540 L1200 800 L0 800 Z" fill="#6fa35d" opacity="0.8"/>
+  <rect x="150" y="340" width="250" height="120" rx="18" fill="#f3f8f8" opacity="0.8"/>
+  <rect x="510" y="295" width="310" height="165" rx="18" fill="#fefefe" opacity="0.82"/>
+  <rect x="820" y="325" width="180" height="135" rx="18" fill="#f5f6f1" opacity="0.8"/>
+  <path d="M140 610 L350 610 L430 440 L200 440 Z" fill="#d7ad42"/>
+  <path d="M500 630 L860 630 L960 465 L635 465 Z" fill="#f2d97c"/>
+  <path d="M810 630 L1040 630 L1178 495 L940 495 Z" fill="#d7ad42"/>
+  <rect x="185" y="458" width="150" height="12" rx="6" fill="#0b6268"/>
+  <rect x="560" y="490" width="185" height="12" rx="6" fill="#0b6268"/>
+  <circle cx="945" cy="520" r="28" fill="#ffffff" opacity="0.9"/>
+  <text x="600" y="186" text-anchor="middle" font-size="44" fill="#0b6268" font-weight="700" font-family="Tahoma, sans-serif">شهرک رهایشی</text>
+  <text x="600" y="236" text-anchor="middle" font-size="24" fill="#24515b" font-family="Tahoma, sans-serif">حاجی فضل احمد عمر</text>
+</svg>

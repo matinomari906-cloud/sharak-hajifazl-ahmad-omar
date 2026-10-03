@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-label="سرک‌های شهرک">
+  <rect width="900" height="620" fill="#edf5f4"/>
+  <rect y="360" width="900" height="260" fill="#8bb98d"/>
+  <path d="M0 260 L150 220 L290 250 L420 220 L560 250 L700 210 L900 260 L900 620 L0 620 Z" fill="#bfd7c0"/>
+  <path d="M0 470 L150 430 L320 470 L520 430 L680 470 L900 430 L900 620 L0 620 Z" fill="#87aa80"/>
+  <path d="M95 150 L160 150 L170 470 L105 470 Z" fill="#d7ad42"/>
+  <path d="M340 160 L410 160 L420 470 L350 470 Z" fill="#f2d97c"/>
+  <path d="M600 170 L660 170 L670 470 L610 470 Z" fill="#d7ad42"/>
+  <rect x="148" y="250" width="120" height="160" rx="18" fill="#ffffff" opacity="0.8"/>
+  <rect x="358" y="260" width="165" height="150" rx="18" fill="#ffffff" opacity="0.8"/>
+  <rect x="624" y="250" width="110" height="160" rx="18" fill="#ffffff" opacity="0.8"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-label="نقشه شهرک">
+  <rect width="900" height="620" fill="#edf4f3"/>
+  <rect x="60" y="60" width="780" height="500" rx="26" fill="#ffffff" stroke="#d2d9d9" stroke-width="3"/>
+  <path d="M120 120 L220 120 L220 190 L300 190 L300 260 L220 260 L220 340 L120 340 L120 120 Z" fill="#d7ad42" opacity="0.9"/>
+  <path d="M440 120 L600 120 L600 420 L440 420 Z" fill="#cfe4d6"/>
+  <path d="M320 220 L430 220 L430 520 L320 520 Z" fill="#ecf3f2"/>
+  <path d="M600 220 L760 220 L760 520 L600 520 Z" fill="#dfe9e6"/>
+  <path d="M120 430 L780 430" stroke="#0b6268" stroke-width="12" stroke-linecap="round"/>
+  <path d="M220 120 L220 520" stroke="#0b6268" stroke-width="8" stroke-linecap="round"/>
+  <path d="M430 120 L430 520" stroke="#0b6268" stroke-width="8" stroke-linecap="round"/>
+  <path d="M600 120 L600 520" stroke="#0b6268" stroke-width="8" stroke-linecap="round"/>
+  <path d="M120 260 L780 260" stroke="#0b6268" stroke-width="8" stroke-linecap="round"/>
+  <path d="M120 520 L780 520" stroke="#0b6268" stroke-width="8" stroke-linecap="round"/>
+  <text x="170" y="165" fill="#0d2a2d" font-size="24" font-family="Tahoma, sans-serif" font-weight="700">بلاک A</text>
+  <text x="470" y="165" fill="#0d2a2d" font-size="24" font-family="Tahoma, sans-serif" font-weight="700">مناطق خدماتی</text>
+  <text x="350" y="305" fill="#0d2a2d" font-size="22" font-family="Tahoma, sans-serif" font-weight="700">سنگر/پارک</text>
+  <text x="640" y="300" fill="#0d2a2d" font-size="22" font-family="Tahoma, sans-serif" font-weight="700">مارکیت</text>
+  <text x="310" y="570" fill="#0b6268" font-size="26" font-family="Tahoma, sans-serif" font-weight="700">نقشه شهرک رهایشی</text>
+</svg>

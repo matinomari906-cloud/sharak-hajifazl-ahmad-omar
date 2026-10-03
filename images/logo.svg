@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="لوگوی شهرک">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0%" stop-color="#0b6268"/>
+      <stop offset="100%" stop-color="#072e33"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="56" fill="url(#g)"/>
+  <circle cx="256" cy="256" r="158" fill="rgba(255,255,255,0.08)"/>
+  <path d="M160 320 L256 172 L352 320 Z" fill="#d7ad42" opacity="0.95"/>
+  <rect x="228" y="240" width="56" height="90" rx="8" fill="#f3d77a"/>
+  <rect x="178" y="265" width="52" height="85" rx="10" fill="#ffffff" opacity="0.18"/>
+  <rect x="282" y="265" width="52" height="85" rx="10" fill="#ffffff" opacity="0.18"/>
+  <text x="256" y="384" text-anchor="middle" font-size="34" fill="#f9f7ee" font-family="Tahoma, sans-serif" font-weight="700">ش</text>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-label="محله شهرک">
+  <rect width="900" height="620" fill="#e9f0ef"/>
+  <rect y="370" width="900" height="250" fill="#87b48d"/>
+  <path d="M0 420 C180 392, 330 410, 450 450 S760 490, 900 424 L900 620 L0 620 Z" fill="#719f72"/>
+  <rect x="90" y="220" width="160" height="120" rx="14" fill="#ffffff" opacity="0.9"/>
+  <rect x="310" y="200" width="260" height="150" rx="18" fill="#ffffff" opacity="0.9"/>
+  <rect x="620" y="220" width="180" height="120" rx="14" fill="#ffffff" opacity="0.9"/>
+  <path d="M118 420 L182 290 L246 420 Z" fill="#d7ad42"/>
+  <path d="M360 420 L460 250 L570 420 Z" fill="#f2d97c"/>
+  <path d="M640 420 L742 290 L854 420 Z" fill="#d7ad42"/>
+  <rect x="150" y="472" width="105" height="16" rx="8" fill="#0b6268"/>
+  <rect x="390" y="485" width="145" height="16" rx="8" fill="#0b6268"/>
+  <rect x="670" y="482" width="118" height="16" rx="8" fill="#0b6268"/>
+</svg>

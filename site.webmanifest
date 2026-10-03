@@ -1,0 +1,17 @@
+{
+  "name": "شهرک رهایشی حاجی فضل احمد عمر",
+  "short_name": "شهرک",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b6268",
+  "theme_color": "#0b6268",
+  "description": "وب‌سایت رسمی شهرک رهایشی حاجی فضل احمد عمر",
+  "icons": [
+    {
+      "src": "images/logo.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
