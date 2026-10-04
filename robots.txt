@@ -1,11 +1,7 @@
-# شهرک رهایشی حاجی فضل احمد عمر
-# این فایل برای ربات‌های جست‌وجو تنظیم شده است.
-# در نسخهٔ واقعی، https://example.com را با دامنه واقعی سایت خود جایگزین کنید.
-
 User-agent: *
 Allow: /
 Disallow: /admin.html
 Disallow: /admin/
 Disallow: /404.html
 
-Sitemap: https://example.com/sitemap.xml
+Sitemap: https://www.alhajfazalahmadomartown.com/sitemap.xml
