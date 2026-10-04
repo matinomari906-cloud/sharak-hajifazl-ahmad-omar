@@ -1,0 +1,5 @@
+- name: Setup Pages
+  uses: actions/configure-pages@v5
+  with:
+    enablement: true
+    token: ${{ secrets.PAGES_TOKEN }}
