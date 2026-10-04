@@ -1,1 +1,18 @@
+RewriteEngine On
+
+# Redirect non-www and non-https to https://www.alhajfazalahmadomartown.com
+RewriteCond %{HTTP_HOST} !^www\.alhajfazalahmadomartown\.com$ [NC]
+RewriteRule ^(.*)$ https://www.alhajfazalahmadomartown.com/$1 [R=301,L]
+
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://www.alhajfazalahmadomartown.com/$1 [R=301,L]
+
+# Custom 404
 ErrorDocument 404 /404.html
+
+# Recommended security headers (optional)
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "no-referrer-when-downgrade"
+</IfModule>
