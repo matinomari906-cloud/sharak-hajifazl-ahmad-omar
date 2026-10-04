@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener('DOMContentLoaded', function () {
   const menuToggle = document.getElementById('menuToggle');
   const mainNav = document.getElementById('mainNav');
   const yearNode = document.getElementById('year');
