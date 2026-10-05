@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <a href="#main-content" class="skip-link">پرش به محتوای اصلی</a>
     <div class="topbar">
       <div class="container topbar-inner">
         <span>شهرک رهایشی حاجی فضل احمد عمر · مزارشریف، ولایت بلخ</span>
@@ -27,14 +28,14 @@
     <header class="site-header">
       <div class="container nav-wrap">
         <a href="#home" class="brand" aria-label="خانه">
-          <img src="images/logo.svg" alt="لوگوی شهرک" width="52" height="52" />
+          <img src="images/logo.svg" alt="نشان رسمی شهرک رهایشی حاجی فضل احمد عمر" width="52" height="52" />
           <div>
             <strong>شهرک رهایشی</strong>
             <small>حاجی فضل احمد عمر</small>
           </div>
         </a>
 
-        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-label="باز کردن منو">
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="منوی ناوبری">
           ☰
         </button>
 
@@ -51,7 +52,7 @@
       </div>
     </header>
 
-    <main>
+    <main id="main-content" tabindex="-1">
       <section class="hero" id="home">
         <div class="hero-overlay"></div>
         <div class="container hero-inner">
@@ -67,12 +68,12 @@
             <div class="hero-actions">
               <a class="btn btn-primary" href="#contact">درخواست اطلاعات</a>
               <a class="btn btn-secondary" href="#about">معرفی پروژه</a>
-              <a class="btn btn-whatsapp" href="https://wa.me/93797104648" target="_blank" rel="noopener">واتساپ</a>
+              <a class="btn btn-whatsapp" href="https://wa.me/93797104648" target="_blank" rel="noopener noreferrer" aria-label="ارتباط مستقیم در واتساپ (باز شدن در پنجره جدید)">واتساپ</a>
             </div>
           </div>
 
           <div class="hero-visual">
-            <img src="images/hero.svg" alt="نمایی از شهرک" />
+            <img src="images/hero.svg" alt="طرح شماتیک و ماکت سه‌بعدی شهرک رهایشی حاجی فضل احمد عمر" />
           </div>
         </div>
       </section>
@@ -101,7 +102,7 @@
       <section class="section" id="about">
         <div class="container about-grid">
           <div class="about-image">
-            <img src="images/g-fields.svg" alt="ساحات و فضای سبز شهرک" />
+            <img src="images/g-fields.svg" alt="طرح فضای سبز و پارک‌های تفریحی شهرک" />
           </div>
 
           <div class="about-copy">
@@ -222,16 +223,16 @@
 
           <div class="gallery-grid">
             <figure class="gallery-item wide">
-              <img src="images/g-district.svg" alt="نمایی از محله شهرک" />
+              <img src="images/g-district.svg" alt="ساحات مسکونی و تفکیک نمرات رهایشی شهرک" />
             </figure>
             <figure class="gallery-item">
-              <img src="images/g-fields.svg" alt="ساحات و فضای سبز شهرک" />
+              <img src="images/g-fields.svg" alt="طرح فضای سبز و پارک‌های تفریحی شهرک" />
             </figure>
             <figure class="gallery-item">
-              <img src="images/g-road.svg" alt="سرک‌های داخل شهرک" />
+              <img src="images/g-road.svg" alt="شبکه سرک‌های معیاری آسفالت‌شده داخل شهرک با عرض ۱۲ الی ۳۰ متر" />
             </figure>
             <figure class="gallery-item wide">
-              <img src="images/map.svg" alt="نقشه شهرک" />
+              <img src="images/map.svg" alt="نقشه موقعیت جغرافیایی شهرک در شهر مزارشریف" />
             </figure>
           </div>
         </div>
@@ -268,7 +269,7 @@
       <section class="section map-section" id="map">
         <div class="container map-grid">
           <div class="map-card">
-            <img src="images/map.svg" alt="نقشه تفصیلی شهرک" />
+            <img src="images/map.svg" alt="پلان تفصیلی نمرات و معابر شهرک رهایشی حاجی فضل احمد عمر" />
           </div>
           <div class="map-info">
             <span class="kicker">موقعیت</span>
@@ -303,20 +304,21 @@
 
           <form class="contact-form" id="leadForm" novalidate>
             <h3>درخواست اطلاعات</h3>
+            <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
             <div class="field-row">
               <div class="field">
-                <label for="name">نام</label>
-                <input id="name" name="name" type="text" placeholder="نام شما" required />
+                <label for="name">نام و نام خانوادگی <span class="req" aria-hidden="true">*</span></label>
+                <input id="name" name="name" type="text" placeholder="نام و تخلص شما" autocomplete="name" required aria-required="true" />
               </div>
               <div class="field">
-                <label for="phone">شماره تماس</label>
-                <input id="phone" name="phone" type="tel" placeholder="07XXXXXXXX" required />
+                <label for="phone">شماره تماس <span class="req" aria-hidden="true">*</span></label>
+                <input id="phone" name="phone" type="tel" placeholder="مثال: 0778800100" autocomplete="tel" required aria-required="true" />
               </div>
             </div>
 
             <div class="field">
-              <label for="property">نوع ملک</label>
-              <select id="property" name="property">
+              <label for="property">نوع ملک مورد نظر</label>
+              <select id="property" name="property" aria-label="نوع ملک مورد نظر">
                 <option value="نمره رهایشی">نمره رهایشی</option>
                 <option value="نمره تجاری">نمره تجاری</option>
                 <option value="بلندمنزل">بلندمنزل</option>
@@ -325,11 +327,11 @@
             </div>
 
             <div class="field">
-              <label for="message">پیام</label>
-              <textarea id="message" name="message" rows="4" placeholder="توضیح مختصر درباره نمره یا نوع ملک مورد نیاز"></textarea>
+              <label for="message">پیام یا توضیحات تکمیلی</label>
+              <textarea id="message" name="message" rows="4" placeholder="توضیح درباره موقعیت نمره، متراژ یا سوالات شما"></textarea>
             </div>
 
-            <button type="submit" class="submit-btn">ارسال در واتساپ</button>
+            <button type="submit" class="submit-btn" aria-label="ارسال درخواست اطلاعات در واتساپ">ارسال در واتساپ</button>
           </form>
         </div>
       </section>
@@ -339,7 +341,7 @@
       <div class="container footer-inner">
         <div>
           <div class="footer-brand">
-            <img src="images/logo.svg" alt="لوگو" width="40" height="40" />
+            <img src="images/logo.svg" alt="نشان رسمی شهرک رهایشی حاجی فضل احمد عمر" width="40" height="40" />
             <strong>شهرک رهایشی حاجی فضل احمد عمر</strong>
           </div>
           <p>پروژه شهری و رهایشی در مزارشریف، ولایت بلخ</p>

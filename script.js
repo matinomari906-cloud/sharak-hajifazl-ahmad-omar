@@ -33,9 +33,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const normalizedPhone = phone.replace(/\s+/g, '').replace(/[^0-9+]/g, '');
 
+      const statusNode = document.getElementById('formStatus');
       if (!name || !normalizedPhone || normalizedPhone.length < 10) {
-        alert('لطفاً نام و شماره تماس معتبر را وارد کنید.');
+        const errorMsg = 'لطفاً نام کامل و شماره تماس معتبر (حداقل ۱۰ رقم) را وارد فرمایید.';
+        if (statusNode) {
+          statusNode.textContent = errorMsg;
+          statusNode.className = 'form-status error';
+        }
+        alert(errorMsg);
         return;
+      } else if (statusNode) {
+        statusNode.textContent = '';
+        statusNode.className = 'form-status';
       }
 
       const text = `سلام، من از وب‌سایت شهرک رهایشی حاجی فضل احمد عمر درخواست اطلاعات دارم.\n\nنام: ${name}\nشماره تماس: ${normalizedPhone}\nنوع ملک: ${property}\nپیام: ${message || '—'}`;
@@ -43,4 +52,16 @@ document.addEventListener('DOMContentLoaded', function () {
       window.open(whatsappUrl, '_blank', 'noopener');
     });
   }
+
+  // Keyboard accessibility: Close mobile nav on Escape key
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && mainNav && mainNav.classList.contains('show')) {
+      mainNav.classList.remove('show');
+      if (menuToggle) {
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.focus();
+      }
+    }
+  });
+
 });
